@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div id="quiz">
+        <div id="questionContainer">
+            <h2 id="questionNumber">Question 1:</h2>
+            <p id="question">What is the capital of France?</p>
+            <div id="options">
+                <button id="option1">Paris</button>
+                <button id="option2">London</button>
+                <button id="option3">Rome</button>
+                <button id="option4">Berlin</button>
+            </div>
+        </div>
+        <div id="controls">
+            <button id="next" class="hidden">Next Question</button>
+            <button id="finish">Finish Quiz</button>
+            <button id="generateResult" class="hidden">Generate Result</button>
+        </div>
+        <div id="timer">
+            Time left: <span id="time">60</span> seconds
+        </div>
+    </div>
+    <div id="result" class="hidden">
+        <h2>Quiz Results</h2>
+        <p>Total Questions: 50</p>
+        <p>Questions Attempted: <span id="attempted">0</span></p>
+        <p>Correct Answers: <span id="correct">0</span></p>
+        <p>Incorrect Answers: <span id="incorrect">0</span></p>
+        <p>Score: <span id="score">0.00</span></p>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>
